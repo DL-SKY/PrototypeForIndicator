@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using DllSky.Patterns;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ScreenManager : Singleton<ScreenManager>

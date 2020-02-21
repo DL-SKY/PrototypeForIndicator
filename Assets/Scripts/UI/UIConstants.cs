@@ -13,3 +13,8 @@ public static class ConstantsScreen
 {
     public const string MAIN_MENU = "MainMenuScreen";
 }
+
+public static class ConstantsScene
+{
+    public const string FIRST_SCENE = "FirstScene";
+}

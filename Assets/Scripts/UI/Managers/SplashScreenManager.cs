@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DllSky.Patterns;
+using System.Collections;
 using UnityEngine;
 
 public class SplashScreenManager : Singleton<SplashScreenManager>

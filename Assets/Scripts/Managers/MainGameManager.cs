@@ -64,7 +64,7 @@ public class MainGameManager : Singleton<MainGameManager>
 
         //Загружаем экран World, который загрузит Сцену
         ScreenManager.Instance.ShowScreen(ConstantsScreen.MAIN_MENU);
-        yield return SplashScreenManager.Instance.HideSplashScreen();
+        //yield return SplashScreenManager.Instance.HideSplashScreen();     //Загрузочные экраны лучше убирать из кода Экранов (в данном случае в MainMenuScreenController)
     }
 
     public IEnumerator LoadSceneCoroutine(string _scene, LoadSceneMode _mode = LoadSceneMode.Additive)

@@ -18,15 +18,20 @@ namespace DllSky.Patterns
             get
             {
                 if (instance == null)
+                {
                     instance = GameObject.FindObjectOfType<T>();
-                //if (instance == null)
-                //{
-                //    var obj = new GameObject("Singleton");
-                //    instance = obj.AddComponent<T>();
-                //}
+                }
 
-                //if ((object)instance == null)
-                //    Debug.LogWarning((object)string.Format("No {0} instance set", (object)typeof(T).FullName));
+                if (instance == null)
+                {
+                    var obj = new GameObject(string.Format("Singleton_{0}", typeof(T).Name));
+                    instance = obj.AddComponent<T>();
+                }
+
+                if ((object)instance == null)
+                {
+                    Debug.LogWarning((object)string.Format("No {0} instance set", (object)typeof(T).FullName));
+                }
 
                 return Singleton<T>.instance;
             }
@@ -42,9 +47,16 @@ namespace DllSky.Patterns
         #endregion
 
         #region Unity methods
-        private void OnDestroy()
+        protected virtual void Awake()
         {
-            instance = null;
+            if (IsInstantiated)
+                instance = GetComponent<T>();
+        }
+
+        protected virtual void OnDestroy()
+        {
+            if (instance == this)
+                instance = null;
         }
         #endregion
     }

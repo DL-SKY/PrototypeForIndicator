@@ -11,8 +11,10 @@ public class SplashScreenManager : Singleton<SplashScreenManager>
     #endregion
 
     #region Unity methods
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         if (!parent)
             parent = transform;
     }

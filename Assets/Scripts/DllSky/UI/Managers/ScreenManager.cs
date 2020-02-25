@@ -108,6 +108,9 @@ public class ScreenManager : Singleton<ScreenManager>
 
     public void CloseDialog(DialogController _dialog)
     {
+        if (_dialog.IsOpened)
+            _dialog.CloseDialogImmediately();
+
         dialogs.Remove(_dialog);
         Debug.Log("<color=#FFD800>[ScreenManager]</color> Dialog closed: " + _dialog.dialogName);
         

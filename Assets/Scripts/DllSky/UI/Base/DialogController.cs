@@ -18,8 +18,9 @@ public class DialogController : MonoBehaviour
     public Action<bool> Callback;
 
     protected bool isInit = false;
-
+    
     private bool isOpened = true;
+    public bool IsOpened => isOpened;
     #endregion
 
     #region Unity methods

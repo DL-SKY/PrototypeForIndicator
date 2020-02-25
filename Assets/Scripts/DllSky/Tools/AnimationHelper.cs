@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimationHelper : MonoBehaviour
 {
-    public void OnSelfDisable()
+    public void OnDisableSelf()
     {
         gameObject.SetActive(false);
     }

@@ -37,7 +37,7 @@ public class ScreenManager : Singleton<ScreenManager>
     public void ShowScreen(string _name, object _data = null)
     {
         //Проверка с текущим экраном
-        if (screens.Count > 0 && screens[screens.Count - 1].screenName == _name)
+        if (screens.Count > 0 && screens[screens.Count - 1].ScreenName == _name)
         {
             Debug.LogWarning("[ScreenManager] Trying to re-open the screen: " + _name);
             SplashScreenManager.Instance.HideSplashScreenImmediately();
@@ -49,7 +49,7 @@ public class ScreenManager : Singleton<ScreenManager>
         //Проверка со список открытых экранов
         foreach (var item in screens)
         {
-            if (item.screenName == _name)
+            if (item.ScreenName == _name)
             {
                 Debug.LogWarning("[ScreenManager] The screen \"" + _name + "\" is in the history of open screens.");
 
@@ -66,7 +66,7 @@ public class ScreenManager : Singleton<ScreenManager>
 
         screen.transform.SetAsLastSibling();
         screen.Initialize(_data);
-        screen.screenName = _name;
+        screen.SetName(_name);
 
         //Деактивируем предыдущие экраны
         foreach (var item in screens)
@@ -93,7 +93,7 @@ public class ScreenManager : Singleton<ScreenManager>
     {
         var dialog = Instantiate(Resources.Load<GameObject>(string.Format("{0}{1}", ConstantsUiPath.DIALOG, _name)), parentDialogs).GetComponent<T>();
         dialog.transform.SetAsLastSibling();
-        dialog.dialogName = _name;
+        dialog.SetName(_name);
 
         dialogs.Add(dialog);
         Debug.Log("<color=#FFD800>[ScreenManager] Dialog loaded: " + _name + "</color>");
@@ -112,7 +112,7 @@ public class ScreenManager : Singleton<ScreenManager>
             _dialog.CloseDialogImmediately();
 
         dialogs.Remove(_dialog);
-        Debug.Log("<color=#FFD800>[ScreenManager]</color> Dialog closed: " + _dialog.dialogName);
+        Debug.Log("<color=#FFD800>[ScreenManager]</color> Dialog closed: " + _dialog.DialogName);
         
         //Destroy(_dialog.gameObject);
         /*int index = dialogs.FindIndex(x => x.id == _dialog.id);

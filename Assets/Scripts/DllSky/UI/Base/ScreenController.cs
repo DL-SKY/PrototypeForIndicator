@@ -4,10 +4,11 @@ using UnityEngine;
 public class ScreenController : MonoBehaviour
 {
     #region Variables
-    public string screenName = "";
+    public string ScreenName => screenName;
+    protected string screenName;
 
-    private bool isInit = false;
-    private bool isOpened = true;
+    protected bool isInit = false;
+    protected bool isOpened = true;
     #endregion
 
     #region Properties
@@ -22,6 +23,11 @@ public class ScreenController : MonoBehaviour
     #endregion
 
     #region Public methods
+    public void SetName(string _name)
+    {
+        screenName = _name;
+    }
+
     public virtual void Initialize(object _data)
     {
         isInit = true;

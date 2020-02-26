@@ -10,6 +10,7 @@ public class MainMenuScreenController : ScreenController
 {
     #region Variables
     [Space()]
+#pragma warning disable 0649
     [SerializeField]
     private TextMeshProUGUI moneyLabel; 
     [SerializeField]
@@ -53,6 +54,17 @@ public class MainMenuScreenController : ScreenController
         //Вызываем событие "ExampleEvent" с аргументом "10". 
         EventManager.DispatchEvent(new CustomEvent("ExampleEvent", 10));
     }
+
+    /// <summary>
+    /// Example using Dialog
+    /// </summary>
+    public void OnClickExampleDialog()
+    {
+        ScreenManager.Instance.ShowDialog<ExampleDialog>(ConstantsDialog.EXAMPLE);
+    }
+    #endregion
+
+    #region Protected methods
     #endregion
 
     #region Private methods

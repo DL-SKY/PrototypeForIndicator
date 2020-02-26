@@ -6,20 +6,24 @@ using UnityEngine;
 public class DialogController : MonoBehaviour
 {
     #region Variables
-    public string dialogName = "";
+    public string DialogName => dialogName;
+    protected string dialogName;
+
     public bool canCloseWithEsc = true;
     public bool result = true;
 
     [Header("Animation")]
     public bool withAnimation = true;
-    public GameObject bg;
-    public GameObject content;
+    [SerializeField]
+    protected GameObject bg;
+    [SerializeField]
+    protected GameObject content;
 
-    public Action<bool> Callback;
+    protected Action<bool> Callback;
 
     protected bool isInit = false;
     
-    private bool isOpened = true;
+    protected bool isOpened = true;
     public bool IsOpened => isOpened;
     #endregion
 
@@ -43,6 +47,16 @@ public class DialogController : MonoBehaviour
     #endregion
 
     #region Public methods
+    public void SetName(string _name)
+    {
+        dialogName = _name;
+    }
+
+    public void SetCallback(Action<bool> _callback)
+    {
+        Callback = _callback;
+    }
+
     //Метод, который вызывается в анимации появления перед стартом появления "контента"
     public virtual void InitBeforeShowContent()
     {
@@ -92,7 +106,7 @@ public class DialogController : MonoBehaviour
     }
 
     //Метод, который должен вызываться в анимации исчезания Диалога
-    public void CloseDialogImmediately()
+    public virtual void CloseDialogImmediately()
     {
         isOpened = false;
 

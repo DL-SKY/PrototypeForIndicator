@@ -100,6 +100,10 @@ public class MainMenuScreenController : ScreenController
 
     private IEnumerator Show()
     {
+        //Включаем музыку
+        AudioManager.Instance.PlayMusic(@"Audio/", "MUS", _volume: 0.5f);
+
+        //Убираем перекрывающую заставку-прелоадер
         yield return SplashScreenManager.Instance.HideSplashScreen();
     }
     #endregion

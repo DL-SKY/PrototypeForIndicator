@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class ScreenController : MonoBehaviour
@@ -7,8 +8,9 @@ public class ScreenController : MonoBehaviour
     public string ScreenName => screenName;
     protected string screenName;
 
-    protected bool isInit = false;
+    protected bool isInit = false;                  //Флаг Инициализации. Нужен, что бы при потере фокуса или активации/деактивации определить был ли Экран активен до этого
     protected bool isOpened = true;
+    public bool IsOpened => isOpened;
     #endregion
 
     #region Properties
@@ -47,6 +49,7 @@ public class ScreenController : MonoBehaviour
     #endregion
 
     #region Coroutine
+    [Obsolete("Using: while (IsOpened) yield return null;")]
     public IEnumerator Wait()
     {
         while (isOpened)

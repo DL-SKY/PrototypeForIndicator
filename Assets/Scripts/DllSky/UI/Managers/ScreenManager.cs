@@ -126,12 +126,7 @@ public class ScreenManager : Singleton<ScreenManager>
 
     public bool CheckLastDialog(DialogController _dialog)
     {
-        var result = false;
-
-        if (dialogs[dialogs.Count - 1] == _dialog)
-            result = true;
-
-        return result;
+        return dialogs[dialogs.Count - 1] == _dialog;
     }
 
     public int GetDialogsCount()

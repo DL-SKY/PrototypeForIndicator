@@ -412,6 +412,7 @@ MonoBehaviour:
   canCloseWithEsc: 1
   result: 1
   withAnimation: 1
+  animator: {fileID: 0}
   bg: {fileID: 3649240072207254950}
   content: {fileID: 5292317445348021076}
 --- !u!1 &2884069300359482287

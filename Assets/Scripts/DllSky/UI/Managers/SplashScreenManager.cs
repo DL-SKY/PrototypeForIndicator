@@ -71,22 +71,22 @@ public class SplashScreenManager : Singleton<SplashScreenManager>
     //    //}
     //}
 
-    public IEnumerator HideSplashScreen()
+    public IEnumerator HideSplashScreen(bool _withAnimation = true)
     {
         if (!splashScreen)
             yield break;
 
-        DialogController controller = splashScreen.GetComponent<DialogController>();        
+        DialogController controller = splashScreen.GetComponent<DialogController>();
 
-        if (splashScreen.name.Contains("StartingGame"))
-        {
+        if (_withAnimation)
+            controller.CloseSplashScreen();
+        else
             controller.CloseSplashScreenImmediately();
-            yield return controller.Wait();
-            yield break;
-        }
 
-        controller.CloseSplashScreen();
-        yield return controller.Wait();
+        //Obsolete
+        //yield return controller.WaitShowSplashScreen();
+        while (controller.IsOpened)
+            yield return null;
     }
 
     /*public IEnumerator HideSplashScreenImmediately()

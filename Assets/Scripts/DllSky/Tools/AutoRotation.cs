@@ -2,10 +2,14 @@
 
 public class AutoRotation : MonoBehaviour
 {
-    public float speed = -25.0f;
+    #region Variables
+    public Vector3 speed = Vector3.zero;
+    #endregion
 
+    #region Unity methods
     private void Update()
     {
-        transform.localEulerAngles += new Vector3(0.0f, 0.0f, speed * Time.deltaTime);
+        transform.localRotation *= Quaternion.Euler(speed * Time.deltaTime);
     }
+    #endregion
 }

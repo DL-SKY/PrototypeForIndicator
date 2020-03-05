@@ -17,7 +17,6 @@ public class ScreenController : MonoBehaviour
     public bool IsInit
     {
         get { return isInit; }
-        set { isInit = value; }
     }
     #endregion
 

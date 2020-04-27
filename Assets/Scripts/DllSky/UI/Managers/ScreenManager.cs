@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScreenManager : Singleton<ScreenManager>
 {
     #region Variables
+    public Transform parentWorld;
     public Transform parentScreens;
     public Transform parentDialogs;
 
@@ -62,7 +63,7 @@ public class ScreenManager : Singleton<ScreenManager>
         }
 
         if (screen == null)
-            screen = Instantiate(Resources.Load<GameObject>(string.Format("{0}{1}", ConstantsUiPath.SCREEN, _name)), parentScreens).GetComponent<ScreenController>();
+            screen = Instantiate(Resources.Load<GameObject>(string.Format("{0}/{1}", ConstantsUiPath.SCREEN, _name)), parentScreens).GetComponent<ScreenController>();
 
         screen.transform.SetAsLastSibling();
         screen.Initialize(_data);
@@ -91,7 +92,7 @@ public class ScreenManager : Singleton<ScreenManager>
 
     public T ShowDialog<T>(string _name) where T : DialogController
     {
-        var dialog = Instantiate(Resources.Load<GameObject>(string.Format("{0}{1}", ConstantsUiPath.DIALOG, _name)), parentDialogs).GetComponent<T>();
+        var dialog = Instantiate(Resources.Load<GameObject>(string.Format("{0}/{1}", ConstantsUiPath.DIALOG, _name)), parentDialogs).GetComponent<T>();
         dialog.transform.SetAsLastSibling();
         dialog.SetName(_name);
 

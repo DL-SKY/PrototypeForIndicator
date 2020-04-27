@@ -47,7 +47,7 @@ public class SplashScreenManager : Singleton<SplashScreenManager>
         if (splashScreen)
             Destroy(splashScreen);
 
-        splashScreen = Instantiate(Resources.Load<GameObject>(string.Format("{0}{1}", ConstantsUiPath.SPLASHSCREEN, "StartingGame")), parent);
+        splashScreen = Instantiate(Resources.Load<GameObject>(string.Format("{0}/{1}", ConstantsUiPath.SPLASHSCREEN, "StartingGame")), parent);
         splashScreen.transform.SetAsLastSibling();
 
         yield return null;

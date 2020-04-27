@@ -85,6 +85,12 @@ namespace DllSky.Managers
             }
         }
 
+        public static void DispatchEvent(string _type, object _data = null)
+        {
+            var customEvent = new CustomEvent(_type, _data);
+            DispatchEvent(customEvent);
+        }
+
         public static void Clear()
         {
             foreach (var _event in events)

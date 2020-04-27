@@ -1,0 +1,322 @@
+{
+  "strings": [
+    {
+      "id": "na",
+      "rus": "N/A",
+      "eng": "N/A",
+      "deu": "N/A"
+    },
+    {
+      "id": "loading",
+      "rus": "Загрузка...",
+      "eng": "Loading...",
+      "deu": "Wird geladen..."
+    },
+    {
+      "id": "version",
+      "rus": "Версия",
+      "eng": "Version",
+      "deu": "Ausführung"
+    },
+    {
+      "id": "special_offer",
+      "rus": "Специальное предложение",
+      "eng": "Special offer",
+      "deu": "Sonderangebot"
+    },
+    {
+      "id": "tap_to_play",
+      "rus": "НАЖМИ И ИГРАЙ",
+      "eng": "CLICK AND PLAY",
+      "deu": "KLICKEN UND SPIELEN"
+    },
+    {
+      "id": "press_and_hold",
+      "rus": "НАЖМИ И ДЕРЖИ\n",
+      "eng": "PRESS AND HOLD",
+      "deu": "DRÜCKEN UND HALTEN"
+    },
+    {
+      "id": "best_score",
+      "rus": "РЕКОРД",
+      "eng": "RECORD",
+      "deu": "AUFZEICHNUNG"
+    },
+    {
+      "id": "combo_title",
+      "rus": "КОМБО!",
+      "eng": "COMBO!",
+      "deu": "COMBO!"
+    },
+    {
+      "id": "settings_title",
+      "rus": "Настройки",
+      "eng": "Settings",
+      "deu": "Einstellungen"
+    },
+    {
+      "id": "boosters_title",
+      "rus": "Бустеры",
+      "eng": "Boosters",
+      "deu": "Booster"
+    },
+    {
+      "id": "continue_qst",
+      "rus": "Продолжить играть?",
+      "eng": "Continue to play?",
+      "deu": "Weiterspielen?"
+    },
+    {
+      "id": "free_title",
+      "rus": "Бесплатно",
+      "eng": "Free",
+      "deu": "Kostenlos"
+    },
+    {
+      "id": "game_over_title",
+      "rus": "ИГРА ОКОНЧЕНА",
+      "eng": "GAME OVER",
+      "deu": "SPIEL IST AUS"
+    },
+    {
+      "id": "claim_prize",
+      "rus": "Получи приз!",
+      "eng": "Get a prize!",
+      "deu": "Bekomme einen Preis!"
+    },
+    {
+      "id": "prev_record",
+      "rus": "ПРЕДЫДУЩИЙ РЕКОРД",
+      "eng": "PREVIOUS RECORD",
+      "deu": "BISHERIGEN REKORD"
+    },
+    {
+      "id": "promocode_title",
+      "rus": "ПРОМО-КОД",
+      "eng": "PROMO-CODE",
+      "deu": "WERBE-CODE"
+    },
+    {
+      "id": "credits_title",
+      "rus": "Об игре",
+      "eng": "Credits",
+      "deu": "Credits"
+    },
+    {
+      "id": "select_title",
+      "rus": "Выбрать",
+      "eng": "Select",
+      "deu": "Wählen"
+    },
+    {
+      "id": "PikabuBonus",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "StandardBoomerang",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "SecondBoomerang",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "ThirdBoomerang",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "FourthBoomerang",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "SpinnerdBoomerang",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "BananaBoomerang",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "Button",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "Donut",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "Wrench",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "EggBoomerang",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "ShieldBoomerang",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "Batarang",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "Mjolnir",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "Star",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "Umbrella",
+      "rus": "Бумеранг",
+      "eng": "Boomerang",
+      "deu": "Boomerang"
+    },
+    {
+      "id": "money",
+      "rus": "Монеты",
+      "eng": "Coins",
+      "deu": "Münzen"
+    },
+    {
+      "id": "iap",
+      "rus": "Покупка",
+      "eng": "Purchase",
+      "deu": "Kauf"
+    },
+    {
+      "id": "ads",
+      "rus": "Реклама",
+      "eng": "Advertising",
+      "deu": "Werbung"
+    },
+    {
+      "id": "HitPoints",
+      "rus": "Бустер Здоровья",
+      "eng": "Health Booster",
+      "deu": "Gesundheits-Booster"
+    },
+    {
+      "id": "Freeze",
+      "rus": "Бустер Времени",
+      "eng": "Booster of Time",
+      "deu": "Booster of Time"
+    },
+    {
+      "id": "Score",
+      "rus": "Бустер Рейтинга",
+      "eng": "Rating Booster",
+      "deu": "Rating-Booster"
+    },
+    {
+      "id": "Programming_title",
+      "rus": "Программирование",
+      "eng": "Programming",
+      "deu": "Programmierung"
+    },
+    {
+      "id": "Arts_title",
+      "rus": "Графика",
+      "eng": "Arts",
+      "deu": "Kunst"
+    },
+    {
+      "id": "Music_title",
+      "rus": "Музыка",
+      "eng": "Music",
+      "deu": "Musik"
+    },
+    {
+      "id": "ID_OfferD1_Title",
+      "rus": null,
+      "eng": null,
+      "deu": null
+    },
+    {
+      "id": "ID_OfferD1_Text",
+      "rus": null,
+      "eng": null,
+      "deu": null
+    },
+    {
+      "id": "ID_OfferD3_Title",
+      "rus": null,
+      "eng": null,
+      "deu": null
+    },
+    {
+      "id": "ID_OfferD3_Text",
+      "rus": null,
+      "eng": null,
+      "deu": null
+    },
+    {
+      "id": "ID_OfferD7_Title",
+      "rus": null,
+      "eng": null,
+      "deu": null
+    },
+    {
+      "id": "ID_OfferD7_Text",
+      "rus": null,
+      "eng": null,
+      "deu": null
+    },
+    {
+      "id": "ID_OneDaysAgo_Title",
+      "rus": "Рекорды ждут",
+      "eng": "Records are waiting",
+      "deu": "Aufzeichnungen warten"
+    },
+    {
+      "id": "ID_OneDaysAgo_Text",
+      "rus": "Вернись в игру и стань чемпионом в Таблице Лидеров!",
+      "eng": "Return to the game and become the champion in the Leaderboard!",
+      "deu": "Kehren Sie zum Spiel zurück und werden Sie der Champion in der Rangliste!"
+    },
+    {
+      "id": "ID_ThreeDaysAgo_Title",
+      "rus": "Рекорды ждут",
+      "eng": "Records are waiting",
+      "deu": "Aufzeichnungen warten"
+    },
+    {
+      "id": "ID_ThreeDaysAgo_Text",
+      "rus": "Вернись в игру и стань чемпионом в Таблице Лидеров!",
+      "eng": "Return to the game and become the champion in the Leaderboard!",
+      "deu": "Kehren Sie zum Spiel zurück und werden Sie der Champion in der Rangliste!"
+    }
+  ]
+}

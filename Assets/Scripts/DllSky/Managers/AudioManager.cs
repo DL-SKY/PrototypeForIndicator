@@ -26,12 +26,12 @@ namespace DllSky.Managers
 
         private void OnEnable()
         {
-            EventManager.AddEventListener("OnChangeMuteSetting", OnChangeMuteSettingsHandler);
+            EventManager.AddEventListener("CHANGE_MUTE_SETTING", OnChangeMuteSettingsHandler);
         }
 
         private void OnDisable()
         {
-            EventManager.RemoveEventListener("OnChangeMuteSetting", OnChangeMuteSettingsHandler);
+            EventManager.RemoveEventListener("CHANGE_MUTE_SETTING", OnChangeMuteSettingsHandler);
         }
         #endregion
 

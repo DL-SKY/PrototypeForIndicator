@@ -23,8 +23,8 @@ public class DialogController : MonoBehaviour
     protected Action<bool> Callback;                    //Коллбек для вызова при закрытии Диалога
 
     protected bool isInit = false;                      //Флаг Инициализации. Нужен, что бы при потере фокуса или активации/деактивации определить был ли Диалог активен до этого
-    protected bool isOpened = true;
     public bool IsOpened => isOpened;
+    protected bool isOpened = true;    
     #endregion
 
     #region Unity methods

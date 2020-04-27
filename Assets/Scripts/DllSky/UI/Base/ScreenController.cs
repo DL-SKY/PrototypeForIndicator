@@ -8,16 +8,10 @@ public class ScreenController : MonoBehaviour
     public string ScreenName => screenName;
     protected string screenName;
 
+    public bool IsInit => isInit;
     protected bool isInit = false;                  //Флаг Инициализации. Нужен, что бы при потере фокуса или активации/деактивации определить был ли Экран активен до этого
-    protected bool isOpened = true;
     public bool IsOpened => isOpened;
-    #endregion
-
-    #region Properties
-    public bool IsInit
-    {
-        get { return isInit; }
-    }
+    protected bool isOpened = true;    
     #endregion
 
     #region Unity methods
